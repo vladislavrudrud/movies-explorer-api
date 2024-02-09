@@ -38,3 +38,5 @@ app.use(defaultError);
 app.listen(PORT, () => {
   console.log('Сервер запущен');
 });
+
+// проверка
