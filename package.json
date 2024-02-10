@@ -1,7 +1,7 @@
 {
-  "name": "express-mesto-gha",
+  "name": "movie-api",
   "version": "1.0.0",
-  "description": "Mesto: Деплой. Слияние и работа фронтенда и бекенда",
+  "description": "2 этап дипломной работы",
   "main": "app.js",
   "scripts": {
     "lint": "npx eslint .",
