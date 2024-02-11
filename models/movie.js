@@ -4,11 +4,11 @@ const validator = require('validator');
 const movieShema = new mongoose.Schema(
   {
     country: {
-      type: Number,
+      type: String,
       required: [true, 'Поле должно быть заполнено'],
     },
     director: {
-      type: Number,
+      type: String,
       required: [true, 'Поле должно быть заполнено'],
     },
     duration: {
@@ -16,11 +16,11 @@ const movieShema = new mongoose.Schema(
       required: [true, 'Поле должно быть заполнено'],
     },
     year: {
-      type: Number,
+      type: String,
       required: [true, 'Поле должно быть заполнено'],
     },
     description: {
-      type: Number,
+      type: String,
       required: [true, 'Поле должно быть заполнено'],
     },
     image: {
@@ -55,10 +55,6 @@ const movieShema = new mongoose.Schema(
       type: String,
       required: [true, 'Поле должно быть заполнено'],
     },
-    // createdAt: {
-    //   type: Date,
-    //   default: Date.now,
-    // },
   },
   { versionKey: false }
 );

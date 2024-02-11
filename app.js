@@ -26,13 +26,14 @@ app.use(requestLogger);
 
 app.use(router);
 
+app.use(errorLogger);
+
 app.use(errors());
 
 app.use((req, res, next) => {
   next(new NotFoundError('Такого адреса не существует.'));
 });
 
-app.use(errorLogger);
 app.use(defaultError);
 
 app.listen(PORT, () => {
